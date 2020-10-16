@@ -1,0 +1,4 @@
+name: AgainCore
+version: ${project.version}
+main: com.nicko.core.Core
+authors: [yNickoKun]

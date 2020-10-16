@@ -1,0 +1,109 @@
+MONGO:
+  HOST: 127.0.0.1
+  PORT: 27017
+  AUTHENTICATION:
+    ENABLED: false
+    USERNAME: ''
+    PASSWORD: ''
+REDIS:
+  HOST: 127.0.0.1
+  PORT: 6379
+  AUTHENTICATION:
+    ENABLED: false
+    PASSWORD: ''
+SETTINGS:
+  UPDATE_PLAYER_LIST_NAME: true
+  HUB_NAME: "Lobby"
+  GEOIP_DOWNLOD: "https://www.dropbox.com/s/fj5xgvzcz1i2gba/GeoLite2-Country.mmdb?dl=1"
+  2FA_ENABLED: true
+  HELP_MESSAGE:
+    - "lorem ipsum..."
+ANNOUNCEMENTS:
+  TIME: 1
+  LIST:
+    - "lorem ipsum..."
+PUNISHMENTS:
+  BROADCAST: "&a • &r{target} &afoi {context} por &r{sender}"
+  BROADCAST_SILENT: "&7[Silent] &r{target} &afoi {context} por &r{sender}"
+  BLACKLIST: "&cSua conta está na BLACKLIST do &6&lAgainMC.\nMotivo: &e{reason}"
+  BAN:
+    KICK: "&cSua conta está {context} do &6&lAgainMC.\nReason: &e{reason}\n{temporary}\n\n&cSe você acha que esta punição é injusta, faça revisão em:\n&fhttps://againmc.com/revisao"
+    TEMPORARY: "\n&cEssa punição expira em &e{time-remaining}&c."
+  KICK:
+    KICK: "&cVocê foi expulso do servidor.\nMotivo: &e{reason}"
+COMMON:
+  KICK_CLOSED_TESTING: "&cHey &f{0}!&c Você pode adquirir o cargo &lBETA-TESTER &cem nosso discord para entrar."
+  COLOR-TAG-ENABLED: true
+  SERVER-OPTION: true
+  SERVER-COMMAND: "/toggle"
+COMMON_ERRORS:
+  FAILED_TO_LOAD_PROFILE: "&c • Ocorreu um erro ao carregar seu perfil, tente novamente mais tarde."
+  COULD_NOT_RESOLVE_PLAYER: "&cNão foi possível carregar as informações do jogador..."
+  PLAYER_NOT_FOUND: "&c • Nenhum jogador com este nome foi encontrado."
+  RANK_NOT_FOUND: "&c • Nenhum ranking com este nome foi encontrado."
+  UNEXPECTED_ERROR: "&c • Um erro inesperado ocorreu, contate um Imperador com: &f{0}"
+SECURITY:
+  SETUP_NEEDED: "&c • Você precisa configurar seu TOTP. Por favor, autentique sua conta."
+  SETUP_EXISTS: "&c • Você já configurou seu TOTP com suas informações."
+  SETUP_DONE: "&c • Você só verá esta mensagem uma vez. Use isso no seu aplicativo TOTP: &a{0}"
+  AUTH_RESET: "&a • Você redefiniu as configurações TOTP de {0}&a."
+  AUTH_INVALIDATE: "&a • Você invalidou a autenticação de {0}&a."
+  AUTH_INVALID: "&c • Código inválido, tente novamente mais tarde."
+  AUTH_VALID: "&a • YAY! Você está autenticado!"
+  AUTH_REQUIRED: "&c • Você precisa autenticar sua conta primeiro."
+  ALREADY_AUTH: "&c • Você já está autenticado!"
+STAFF:
+  STAFFMODE-ENABLED: true
+  STAFFCHAT-ENABLED: true
+  VISIBILITY_ENGINE: true
+  AUTH_SUCCESS: "&9[S] &b({1}) &r{0} &a se autenticou!"
+  AUTH_FAIL: "&9[S] &b({1}) &r{0} &ahas &4&lfalhou &aao autenticar"
+  CHAT: "&9[S] &b({1}) &r{0}&7: {2}"
+  JOIN_NETWORK: "&9[S] &r{0} &aentrou no servidor &2({1})"
+  LEAVE_NETWORK: "&9[S] &r{0} &asaiu do servidor &2({1})"
+  SWITCH_SERVER: "&9[S] &r{0} &aentrou {1} &2(de {2})"
+  FREEZE:
+    - "&c&l----------------"
+    - "&eVocê foi congelado!"
+    - "&c&l----------------"
+  UNFREEZE_MESSAGE: "&9[S] {0} &efoi &6descongelado &epor {1}"
+  FREEZE_MESSAGE: "&9[S] {0} &efoi &6congelado &epor {1}"
+  REPORT_BROADCAST:
+    - "&9[R] &b[{3}] &r{1} &7foi reportado por &r{0}"
+    - "   &9Motivo&7: {2}"
+  REQUEST_BROADCAST:
+    - "&9[R] &b[{2}] &r{0} &7solicitou assistência"
+    - "   &9Motivo&7: {1}"
+  REQUEST_SUBMITTED: "&a • Seu pedido foi enviado para todos os membros da equipe, e será respondido em breve."
+  SOCIAL_SPY: "&7(Spy) &7(Para &r{1} &c-> {5}{3}&7) %MSG%"
+CHAT:
+  FORMAT: "%1$s&r: %2$s"
+  CLEAR_CHAT_BROADCAST: "&e • O chat foi limpo por &r{0}"
+  CLEAR_CHAT_FOR_STAFF: false
+  MUTE_CHAT_BROADCAST: "&e • O chat foi {0} por &r{1}"
+  DELAY_CHAT_ENABLED_BROADCAST: "&e • O chat teve o delay habilitado por &r{0} &7({1} segundo{2})"
+  DELAY_CHAT_DISABLED_BROADCAST: "&e • O chat teve o delay desabilitado por &r{0}"
+  CHAT_DELAYED: "&c • Se acalme! Você só pode falar de novo após {0} segundos."
+ESSENTIAL:
+  DONOR_ONY: false
+  COMMAND_BLOCK:
+    - "/gm c"
+
+# jogador, displayName, cor, alvo, displayName do alvo, cor do alvo
+CONVERSATION:
+  SEND_MESSAGE: "&7{6}[Para &r{5}{4}&7{6}] %MSG%"
+  RECEIVE_MESSAGE: "&7{6}[De &r{5}{4}&7{6}] %MSG%"
+OPTIONS:
+  GLOBAL_CHAT_ENABLED: "&e • Agora o chat global está visível."
+  GLOBAL_CHAT_DISABLED: "&c • Agora o chat global está oculto."
+  TIPS_ENABLED: "&e • Agora os anúncios estão visíveis."
+  TIPS_DISABLE: "&c • Agora os anúncios estão ocultos."
+  SCOREBOARD_ENABLE: "&e • Agora a scoreboard está visível."
+  SCOREBOARD_DISABLE: "&c • Agora a scoreboard está oculta."
+  PRIVATE_MESSAGES_ENABLED: "&a • Agora você pode receber mensagens privadas."
+  PRIVATE_MESSAGES_DISABLED: "&c • Agora você não pode mais receber mensagens privadas. Se enviar alguma mensagem para alguém, ele não poderá te responder de volta."
+  PRIVATE_MESSAGE_SOUNDS_ENABLED: "&e • Agora as notificações de mensagens privadas estão habilitadas."
+  PRIVATE_MESSAGE_SOUNDS_DISABLED: "&c • Agora as notificações de mensagens privadas estão desabilitadas."
+GLOBAL_WHITELIST:
+  KICK_MAINTENANCE: "&cO servidor está em manutenção.\nVerifique nosso discord para mais informações!"
+  KICK_CLOSED_TESTING: "&cHey &f{0}!&c Você pode adquirir o cargo &lBETA-TESTER &cem nosso discord para entrar."
