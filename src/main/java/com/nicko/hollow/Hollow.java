@@ -20,6 +20,8 @@ import java.util.concurrent.ForkJoinPool;
 
 public class Hollow {
 
+    // tá feião
+    
     private static JsonParser PARSER = new JsonParser();
 
     private final String channel;
@@ -63,10 +65,6 @@ public class Hollow {
                 System.out.println("[Hollow] Tentando publicar pacote..");
 
                 try {
-
-                    //if (Zoot.get().getMainConfig().getBoolean("REDIS.AUTHENTICATION.ENABLED")) {
-                    // jedis.auth(Zoot.get().getMainConfig().getString("REDIS.AUTHENTICATION.PASSWORD"));
-                    //}
 
                     jedis.publish(this.channel, packet.id() + ";" + object.toString());
                     System.out.println("[Hollow] Pacote publicado..");
